@@ -32,7 +32,7 @@ class DataValidation:
         try:
             validation_status = None
 
-            all_files = os.listdir(os.path.join(self.data_ingestion_artifact.feature_store_path, "roboflow"))
+            all_files = os.listdir(self.data_ingestion_artifact.feature_store_path)
 
             print(all_files)
 
